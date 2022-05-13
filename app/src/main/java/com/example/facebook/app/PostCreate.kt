@@ -9,5 +9,5 @@ import retrofit2.http.Query
 
 interface PostCreate {
     @POST("users")
-    fun getResources(@Query("user") page:Int):Call<ReqResData<List<User>>>
+    fun post(@Query("user") page:Int):Call<PostCreate>
 }
